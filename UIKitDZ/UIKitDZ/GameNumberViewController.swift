@@ -6,7 +6,7 @@
 //
 
 import UIKit
-/// games with number
+/// экран игры с цифрами
 final class GameNumberViewController: UIViewController {
     
     // MARK: - Private properties
