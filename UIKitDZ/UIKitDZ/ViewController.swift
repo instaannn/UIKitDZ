@@ -24,7 +24,8 @@ final class ViewController: UIViewController {
         setupUI()
     }
     
-    override func viewDidLayoutSubviews() {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         alertOneTextField(title: "Эй", message: "Введите ваше имя", isNumber: false)
     }
     
@@ -37,23 +38,10 @@ final class ViewController: UIViewController {
     @objc private func guessTheNumberAction() {
         alertOneTextField(title: "Привет", message: "Угадай число от 1 до 10", isNumber: true)
     }
-}
-
-// MARK: - Setup
-
-private extension ViewController {
     
-    func setupUI() {
-        view.addSubview(stackView)
-        view.addSubview(nameLabel)
-        stackView.addArrangedSubview(additionButton)
-        stackView.addArrangedSubview(guessTheNumberButton)
-        
-        additionButton.addTarget(self, action: #selector(additionAction), for: .touchUpInside)
-        guessTheNumberButton.addTarget(self, action: #selector(guessTheNumberAction), for: .touchUpInside)
-    }
-    
-    func alertOneTextField(title: String, message: String, isNumber: Bool) {
+    // MARK: - Private methods
+
+    private func alertOneTextField(title: String, message: String, isNumber: Bool) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
         alertController.addTextField { textfield in
@@ -74,7 +62,7 @@ private extension ViewController {
         present(alertController, animated: true, completion: .none)
     }
     
-    func alertTwoTextField(title: String, message: String) {
+    private func alertTwoTextField(title: String, message: String) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
         let alertAction = UIAlertAction(title: "Ok", style: .cancel) { _ in
@@ -96,6 +84,22 @@ private extension ViewController {
         
         alertController.addAction(alertAction)
         present(alertController, animated: true, completion: .none)
+    }
+    
+}
+
+// MARK: - Setup
+
+private extension ViewController {
+    
+    func setupUI() {
+        view.addSubview(stackView)
+        view.addSubview(nameLabel)
+        stackView.addArrangedSubview(additionButton)
+        stackView.addArrangedSubview(guessTheNumberButton)
+        
+        additionButton.addTarget(self, action: #selector(additionAction), for: .touchUpInside)
+        guessTheNumberButton.addTarget(self, action: #selector(guessTheNumberAction), for: .touchUpInside)
     }
 }
 
