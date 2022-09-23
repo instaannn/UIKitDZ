@@ -6,8 +6,8 @@
 //
 
 import UIKit
-
-final class ViewController: UIViewController {
+/// games with number
+final class GameNumberViewController: UIViewController {
     
     // MARK: - Private properties
     
@@ -90,7 +90,7 @@ final class ViewController: UIViewController {
 
 // MARK: - Setup
 
-private extension ViewController {
+private extension GameNumberViewController {
     
     func setupUI() {
         view.addSubview(stackView)
@@ -105,7 +105,7 @@ private extension ViewController {
 
 // MARK: - UITextFieldDelegate
 
-extension ViewController: UITextFieldDelegate {
+extension GameNumberViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         guard let text = textField.text else { return }
@@ -123,7 +123,7 @@ extension ViewController: UITextFieldDelegate {
 
 // MARK: - Factory
 
-private extension ViewController {
+private extension GameNumberViewController {
     
     func makeStackView() -> UIStackView {
         let stackView = UIStackView(frame: CGRect(x: 50, y: 380, width: 310, height: 135))
