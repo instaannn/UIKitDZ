@@ -6,7 +6,7 @@
 //
 
 import UIKit
- 
+ /// экран входа
 final class SignInViewController: UIViewController {
     
     // MARK: - IBOutlet

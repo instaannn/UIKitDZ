@@ -6,7 +6,7 @@
 //
 
 import UIKit
- 
+/// экран выдачи чека
 final class CheckViewController: UIViewController {
     
     // MARK: - IBOutlet

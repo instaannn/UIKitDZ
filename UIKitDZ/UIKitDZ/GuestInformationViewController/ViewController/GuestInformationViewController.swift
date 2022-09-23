@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+/// экран регистрации гостя
 final class GuestInformationViewController: UIViewController {
     
     // MARK: - IBOutlet
