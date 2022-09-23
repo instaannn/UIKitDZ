@@ -6,14 +6,14 @@
 //
 
 import UIKit
-
+/// экран ввода слов
 final class BeginViewController: UIViewController {
     
     // MARK: - Private properties
     
     private lazy var beginButton = makeButton()
     private lazy var wordLabel = makeLabel()
-    private lazy var model = WordModel()
+    private lazy var word = Word()
     
     // MARK: - Lifecycle
     
@@ -30,7 +30,7 @@ final class BeginViewController: UIViewController {
             guard let text = alertController.textFields?.first?.text else {
                 return
             }
-            self.wordLabel.text = self.model.makeWord(text: text)
+            self.wordLabel.text = self.word.makeWord(text: text)
         }
         alertController.addTextField()
         alertController.addAction(alertAction)

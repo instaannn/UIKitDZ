@@ -9,8 +9,8 @@ import Foundation
 
 import UIKit
 
-/// Model for make word
-struct WordModel {
+/// модель обработки слов
+struct Word {
     
     func makeWord(text: String) -> String {
         switch text {
