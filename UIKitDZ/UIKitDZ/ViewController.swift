@@ -24,8 +24,8 @@ final class ViewController: UIViewController {
         setupUI()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         alertOneTextField(title: "Эй", message: "Введите ваше имя", isNumber: false)
     }
     
