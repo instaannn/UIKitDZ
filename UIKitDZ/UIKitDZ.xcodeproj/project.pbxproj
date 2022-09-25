@@ -9,22 +9,30 @@
 /* Begin PBXBuildFile section */
 		85B4C3C828DB404F00C16B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B4C3C728DB404F00C16B52 /* AppDelegate.swift */; };
 		85B4C3CA28DB404F00C16B52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B4C3C928DB404F00C16B52 /* SceneDelegate.swift */; };
-		85B4C3CC28DB404F00C16B52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B4C3CB28DB404F00C16B52 /* ViewController.swift */; };
+		85B4C3CC28DB404F00C16B52 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B4C3CB28DB404F00C16B52 /* PlaylistViewController.swift */; };
 		85B4C3CF28DB404F00C16B52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85B4C3CD28DB404F00C16B52 /* Main.storyboard */; };
 		85B4C3D128DB405100C16B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85B4C3D028DB405100C16B52 /* Assets.xcassets */; };
 		85B4C3D428DB405100C16B52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85B4C3D228DB405100C16B52 /* LaunchScreen.storyboard */; };
+		85F176AB28E0E7A800493809 /* CREAM SODA, Алена Свиридова - Розовый фламинго.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 85F176A928E0E7A800493809 /* CREAM SODA, Алена Свиридова - Розовый фламинго.mp3 */; };
+		85F176AC28E0E7A800493809 /* Thomas Mraz - Бриллианты.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 85F176AA28E0E7A800493809 /* Thomas Mraz - Бриллианты.mp3 */; };
+		85F176AE28E0EFAD00493809 /* PlaySongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F176AD28E0EFAD00493809 /* PlaySongViewController.swift */; };
+		85F176B028E0F20B00493809 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F176AF28E0F20B00493809 /* Song.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		85B4C3C428DB404F00C16B52 /* UIKitDZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitDZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85B4C3C728DB404F00C16B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85B4C3C928DB404F00C16B52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		85B4C3CB28DB404F00C16B52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85B4C3CB28DB404F00C16B52 /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
 		85B4C3CE28DB404F00C16B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85B4C3D028DB405100C16B52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85B4C3D328DB405100C16B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85B4C3D528DB405100C16B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85B4C3DB28DB412E00C16B52 /* .gitignore.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitignore.md; sourceTree = "<group>"; };
+		85F176A928E0E7A800493809 /* CREAM SODA, Алена Свиридова - Розовый фламинго.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "CREAM SODA, Алена Свиридова - Розовый фламинго.mp3"; sourceTree = "<group>"; };
+		85F176AA28E0E7A800493809 /* Thomas Mraz - Бриллианты.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Thomas Mraz - Бриллианты.mp3"; sourceTree = "<group>"; };
+		85F176AD28E0EFAD00493809 /* PlaySongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySongViewController.swift; sourceTree = "<group>"; };
+		85F176AF28E0F20B00493809 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85B1D0E228E10B7A00D0F240 /* PlaylistViewController */ = {
+			isa = PBXGroup;
+			children = (
+				85B1D0E428E10B9D00D0F240 /* Model */,
+				85B1D0E328E10B8600D0F240 /* ViewController */,
+			);
+			path = PlaylistViewController;
+			sourceTree = "<group>";
+		};
+		85B1D0E328E10B8600D0F240 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				85B4C3CB28DB404F00C16B52 /* PlaylistViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		85B1D0E428E10B9D00D0F240 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85F176AF28E0F20B00493809 /* Song.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		85B1D0E528E10BC500D0F240 /* PlaySongViewController */ = {
+			isa = PBXGroup;
+			children = (
+				85B1D0E628E10BCB00D0F240 /* Viewcontroller */,
+			);
+			path = PlaySongViewController;
+			sourceTree = "<group>";
+		};
+		85B1D0E628E10BCB00D0F240 /* Viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				85F176AD28E0EFAD00493809 /* PlaySongViewController.swift */,
+			);
+			path = Viewcontroller;
+			sourceTree = "<group>";
+		};
 		85B4C3BB28DB404F00C16B52 = {
 			isa = PBXGroup;
 			children = (
@@ -59,12 +108,15 @@
 			children = (
 				85B4C3C728DB404F00C16B52 /* AppDelegate.swift */,
 				85B4C3C928DB404F00C16B52 /* SceneDelegate.swift */,
-				85B4C3CB28DB404F00C16B52 /* ViewController.swift */,
+				85B1D0E228E10B7A00D0F240 /* PlaylistViewController */,
+				85B1D0E528E10BC500D0F240 /* PlaySongViewController */,
 				85B4C3CD28DB404F00C16B52 /* Main.storyboard */,
 				85B4C3D028DB405100C16B52 /* Assets.xcassets */,
 				85B4C3D228DB405100C16B52 /* LaunchScreen.storyboard */,
 				85B4C3D528DB405100C16B52 /* Info.plist */,
 				85B4C3DB28DB412E00C16B52 /* .gitignore.md */,
+				85F176A928E0E7A800493809 /* CREAM SODA, Алена Свиридова - Розовый фламинго.mp3 */,
+				85F176AA28E0E7A800493809 /* Thomas Mraz - Бриллианты.mp3 */,
 			);
 			path = UIKitDZ;
 			sourceTree = "<group>";
@@ -128,7 +180,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85F176AB28E0E7A800493809 /* CREAM SODA, Алена Свиридова - Розовый фламинго.mp3 in Resources */,
 				85B4C3D428DB405100C16B52 /* LaunchScreen.storyboard in Resources */,
+				85F176AC28E0E7A800493809 /* Thomas Mraz - Бриллианты.mp3 in Resources */,
 				85B4C3D128DB405100C16B52 /* Assets.xcassets in Resources */,
 				85B4C3CF28DB404F00C16B52 /* Main.storyboard in Resources */,
 			);
@@ -162,9 +216,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85B4C3CC28DB404F00C16B52 /* ViewController.swift in Sources */,
+				85B4C3CC28DB404F00C16B52 /* PlaylistViewController.swift in Sources */,
 				85B4C3C828DB404F00C16B52 /* AppDelegate.swift in Sources */,
 				85B4C3CA28DB404F00C16B52 /* SceneDelegate.swift in Sources */,
+				85F176AE28E0EFAD00493809 /* PlaySongViewController.swift in Sources */,
+				85F176B028E0F20B00493809 /* Song.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
