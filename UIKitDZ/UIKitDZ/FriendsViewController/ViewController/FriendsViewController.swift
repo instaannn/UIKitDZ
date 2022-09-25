@@ -42,6 +42,25 @@ final class FriendsViewController: UIViewController {
         friendInfoViewController.modalPresentationStyle = .formSheet
         navigationController?.present(friendInfoViewController, animated: true)
     }
+    
+    // MARK: - Private methods
+
+    private func dayToBirthday(month: Int, day: Int) -> Int {
+        let birthDateCoponents = DateComponents(month: month, day: day)
+        guard let nextBirthDate = Calendar.current.nextDate(
+            after: Date(),
+            matching: birthDateCoponents,
+            matchingPolicy: .nextTime
+        ) else { return 0 }
+        
+        let difference = Calendar.current.dateComponents(
+            [.day, .hour, .minute, .second],
+            from: Date(),
+            to: nextBirthDate
+        )
+        guard let day = difference.day else { return 0 }
+        return day
+    }
 }
 
 // MARK: - setupUI
@@ -51,6 +70,7 @@ private extension FriendsViewController {
     func setupUI() {
         addView()
         setupNavigationController()
+        setupDays()
     }
     
     func addView() {
@@ -78,6 +98,12 @@ private extension FriendsViewController {
             target: self,
             action: #selector(rightButtonAction)
         )
+    }
+    
+    func setupDays() {
+        firstDateLabel.text = "\(dayToBirthday(month: 3, day: 10)) дней"
+        secondDateLabel.text = "\(dayToBirthday(month: 3, day: 30)) дней"
+        thirdDateLabel.text = "\(dayToBirthday(month: 4, day: 20)) дней"
     }
 }
 
@@ -117,7 +143,7 @@ private extension FriendsViewController {
     func makeDateLabel(date: String, yCoordinate: Int) -> UILabel {
         let label = UILabel()
         label.text = date
-        label.frame = CGRect(x: 320, y: yCoordinate, width: 67, height: 25)
+        label.frame = CGRect(x: 320, y: yCoordinate, width: 80, height: 25)
         label.font = UIFont.boldSystemFont(ofSize: 15)
         label.textColor = .systemGray3
         label.textAlignment = .right

@@ -34,6 +34,7 @@ final class FriendInfoViewController: UIViewController {
     private lazy var agePicker = makePicker(tag: 1)
     private lazy var genderPicker = makePicker(tag: 2)
     private lazy var ageGender = AgeGender()
+    private lazy var imagePicker = UIImagePickerController()
     
     // MARK: - Lifecycle
     
@@ -60,6 +61,15 @@ final class FriendInfoViewController: UIViewController {
     
     @objc private func tapGestureDone() {
         view.endEditing(true)
+    }
+    
+    @objc private func changePhotoButtonAction() {
+        if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum) {
+            imagePicker.delegate = self
+            imagePicker.sourceType = .savedPhotosAlbum
+            imagePicker.allowsEditing = false
+            present(imagePicker, animated: true, completion: nil)
+        }
     }
 }
 
@@ -128,6 +138,23 @@ extension FriendInfoViewController: UITextFieldDelegate {
     }
 }
 
+// MARK: - UIImagePickerControllerDelegate, UINavigationControllerDelegate
+
+extension FriendInfoViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(
+        _ picker: UIImagePickerController,
+        didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]
+    ) {
+        imagePicker.dismiss(animated: true, completion: nil)
+        guard let selectedImage = info[.originalImage] as? UIImage else {
+            print("Image not found!")
+            return
+        }
+        avatarImageView.image = selectedImage
+    }
+}
+
 // MARK: - setupUI
 
 private extension FriendInfoViewController {
@@ -163,6 +190,7 @@ private extension FriendInfoViewController {
     func addAction() {
         cancelButton.addTarget(self, action: #selector(cancelButtonAction), for: .touchUpInside)
         addButton.addTarget(self, action: #selector(addButtonAction), for: .touchUpInside)
+        changePhotoButton.addTarget(self, action: #selector(changePhotoButtonAction), for: .touchUpInside)
     }
     
     func setupTextFields() {
@@ -191,7 +219,12 @@ private extension FriendInfoViewController {
 
 private extension FriendInfoViewController {
     
-    func makeTextButton(title: String, xCoordinate: Int, yCoordinate: Int, width: Int) -> UIButton {
+    func makeTextButton(
+        title: String,
+        xCoordinate: Int,
+        yCoordinate: Int,
+        width: Int
+    ) -> UIButton {
         let button = UIButton()
         button.setTitle(title, for: .normal)
         button.setTitleColor(.blue, for: .normal)
