@@ -7,24 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85419BD428E05AAB00C9C8B2 /* UITextField+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85419BD328E05AAB00C9C8B2 /* UITextField+Extention.swift */; };
+		85419BD628E05EDD00C9C8B2 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85419BD528E05EDD00C9C8B2 /* FriendsViewController.swift */; };
+		85419BD828E075D700C9C8B2 /* FriendInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85419BD728E075D700C9C8B2 /* FriendInfoViewController.swift */; };
+		85419BE328E0B47200C9C8B2 /* DateFormatter+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85419BE228E0B47200C9C8B2 /* DateFormatter+Convenience.swift */; };
 		85B4C3C828DB404F00C16B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B4C3C728DB404F00C16B52 /* AppDelegate.swift */; };
 		85B4C3CA28DB404F00C16B52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B4C3C928DB404F00C16B52 /* SceneDelegate.swift */; };
-		85B4C3CC28DB404F00C16B52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B4C3CB28DB404F00C16B52 /* ViewController.swift */; };
+		85B4C3CC28DB404F00C16B52 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B4C3CB28DB404F00C16B52 /* SignInViewController.swift */; };
 		85B4C3CF28DB404F00C16B52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85B4C3CD28DB404F00C16B52 /* Main.storyboard */; };
 		85B4C3D128DB405100C16B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85B4C3D028DB405100C16B52 /* Assets.xcassets */; };
 		85B4C3D428DB405100C16B52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85B4C3D228DB405100C16B52 /* LaunchScreen.storyboard */; };
+		85F1769F28E0CCCD00493809 /* UIViewController+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F1769E28E0CCCD00493809 /* UIViewController+Extention.swift */; };
+		85F176A828E0D30400493809 /* AgeGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F176A728E0D30400493809 /* AgeGender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		85419BD328E05AAB00C9C8B2 /* UITextField+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extention.swift"; sourceTree = "<group>"; };
+		85419BD528E05EDD00C9C8B2 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		85419BD728E075D700C9C8B2 /* FriendInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendInfoViewController.swift; sourceTree = "<group>"; };
+		85419BE228E0B47200C9C8B2 /* DateFormatter+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Convenience.swift"; sourceTree = "<group>"; };
 		85B4C3C428DB404F00C16B52 /* UIKitDZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitDZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85B4C3C728DB404F00C16B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85B4C3C928DB404F00C16B52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		85B4C3CB28DB404F00C16B52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85B4C3CB28DB404F00C16B52 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		85B4C3CE28DB404F00C16B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85B4C3D028DB405100C16B52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85B4C3D328DB405100C16B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85B4C3D528DB405100C16B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85B4C3DB28DB412E00C16B52 /* .gitignore.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitignore.md; sourceTree = "<group>"; };
+		85F1769E28E0CCCD00493809 /* UIViewController+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extention.swift"; sourceTree = "<group>"; };
+		85F176A728E0D30400493809 /* AgeGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeGender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +50,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85419BD228E05A9B00C9C8B2 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				85419BD328E05AAB00C9C8B2 /* UITextField+Extention.swift */,
+				85419BE228E0B47200C9C8B2 /* DateFormatter+Convenience.swift */,
+				85F1769E28E0CCCD00493809 /* UIViewController+Extention.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
 		85B4C3BB28DB404F00C16B52 = {
 			isa = PBXGroup;
 			children = (
@@ -59,7 +81,10 @@
 			children = (
 				85B4C3C728DB404F00C16B52 /* AppDelegate.swift */,
 				85B4C3C928DB404F00C16B52 /* SceneDelegate.swift */,
-				85B4C3CB28DB404F00C16B52 /* ViewController.swift */,
+				85F176A028E0D15C00493809 /* SignInViewController */,
+				85F176A228E0D29800493809 /* FriendsViewController */,
+				85F176A428E0D2D000493809 /* FriendInfoViewController */,
+				85419BD228E05A9B00C9C8B2 /* Extention */,
 				85B4C3CD28DB404F00C16B52 /* Main.storyboard */,
 				85B4C3D028DB405100C16B52 /* Assets.xcassets */,
 				85B4C3D228DB405100C16B52 /* LaunchScreen.storyboard */,
@@ -67,6 +92,63 @@
 				85B4C3DB28DB412E00C16B52 /* .gitignore.md */,
 			);
 			path = UIKitDZ;
+			sourceTree = "<group>";
+		};
+		85F176A028E0D15C00493809 /* SignInViewController */ = {
+			isa = PBXGroup;
+			children = (
+				85F176A128E0D16800493809 /* ViewController */,
+			);
+			path = SignInViewController;
+			sourceTree = "<group>";
+		};
+		85F176A128E0D16800493809 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				85B4C3CB28DB404F00C16B52 /* SignInViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		85F176A228E0D29800493809 /* FriendsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				85F176A328E0D2A400493809 /* ViewController */,
+			);
+			path = FriendsViewController;
+			sourceTree = "<group>";
+		};
+		85F176A328E0D2A400493809 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				85419BD528E05EDD00C9C8B2 /* FriendsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		85F176A428E0D2D000493809 /* FriendInfoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				85F176A628E0D2E300493809 /* Model */,
+				85F176A528E0D2D500493809 /* ViewController */,
+			);
+			path = FriendInfoViewController;
+			sourceTree = "<group>";
+		};
+		85F176A528E0D2D500493809 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				85419BD728E075D700C9C8B2 /* FriendInfoViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		85F176A628E0D2E300493809 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85F176A728E0D30400493809 /* AgeGender.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,8 +244,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85B4C3CC28DB404F00C16B52 /* ViewController.swift in Sources */,
+				85419BE328E0B47200C9C8B2 /* DateFormatter+Convenience.swift in Sources */,
+				85B4C3CC28DB404F00C16B52 /* SignInViewController.swift in Sources */,
+				85F1769F28E0CCCD00493809 /* UIViewController+Extention.swift in Sources */,
+				85419BD628E05EDD00C9C8B2 /* FriendsViewController.swift in Sources */,
+				85419BD828E075D700C9C8B2 /* FriendInfoViewController.swift in Sources */,
 				85B4C3C828DB404F00C16B52 /* AppDelegate.swift in Sources */,
+				85419BD428E05AAB00C9C8B2 /* UITextField+Extention.swift in Sources */,
+				85F176A828E0D30400493809 /* AgeGender.swift in Sources */,
 				85B4C3CA28DB404F00C16B52 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
