@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - DateFormatter
-
+/// форматирование даты+время в длинный формат
 extension DateFormatter {
     
     static let dayWithTimeDateLongFormatter: DateFormatter = {

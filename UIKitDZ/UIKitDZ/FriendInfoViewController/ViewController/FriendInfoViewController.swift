@@ -73,7 +73,7 @@ final class FriendInfoViewController: UIViewController {
     }
 }
 
-// MARK: - UIPickerViewDelegate
+// MARK: - UIPickerViewDataSource
 
 extension FriendInfoViewController: UIPickerViewDataSource {
     
@@ -107,11 +107,9 @@ extension FriendInfoViewController: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         switch pickerView.tag {
         case 1:
-            let result = ageGender.age[row]
-            return result
+            return ageGender.age[row]
         case 2:
-            let result = ageGender.gender[row]
-            return result
+            return ageGender.gender[row]
         default:
             return ""
         }

@@ -8,7 +8,7 @@
 import UIKit.UITextField
 
 // MARK: - UITextField
-
+/// нижнее подчеркивание текстфилда
 extension UITextField {
 
     // MARK: - Public methods

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+/// Универсальный алерт контроллер
 extension UIViewController {
     
     func showAlert(title: String, message: String, textField: UITextField) {
