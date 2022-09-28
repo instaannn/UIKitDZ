@@ -55,21 +55,19 @@ final class PlaySongViewController: UIViewController {
     }
     
     @IBAction func pauseButtonAction(_ sender: UIButton) {
-        if player.isPlaying {
-            player.pause()
-        } else {
-            player.play()
+        guard player.isPlaying else { player.play()
+            return
         }
+        player.pause()
     }
     
     @IBAction func restartButtonAction(_ sender: UIButton) {
-        if player.isPlaying {
-            timeSlider.value = 0
-            player.currentTime = 0
-            player.play()
-        } else {
-            player.play()
+        guard player.isPlaying else { player.play()
+            return
         }
+        timeSlider.value = 0
+        player.currentTime = 0
+        player.play()
     }
     
     @IBAction func volumeSliderAction(_ sender: UISlider) {
