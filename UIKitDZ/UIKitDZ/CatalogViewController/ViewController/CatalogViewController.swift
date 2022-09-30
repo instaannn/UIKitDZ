@@ -139,7 +139,7 @@ private extension CatalogViewController {
     
     func makeDescriptionLabel() -> UILabel {
         let label = UILabel()
-        label.text = "Нетрадиционный чай с ркими ягодными топингами"
+        label.text = "Нетрадиционный чай с яркими ягодными топингами"
         label.font = UIFont(name: "Montserrat-Light", size: 20)
         label.frame = CGRect(x: 29, y: 513, width: 355, height: 50)
         label.numberOfLines = 0

@@ -6,7 +6,7 @@
 //
 
 import UIKit.UIButton
-
+/// Главная кнопка на все экраны
 extension UIButton {
     
     func mainButton(text: String) {
