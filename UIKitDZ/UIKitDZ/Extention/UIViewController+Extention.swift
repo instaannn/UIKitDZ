@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+/// Вызов алерта с кнопкой Ok
 extension UIViewController {
     
      func showAlert(title: String, message: String) {

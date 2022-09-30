@@ -32,7 +32,7 @@ final class SendPostcardViewController: UIViewController {
     
     // MARK: - IBAction
     
-    @IBAction func nameSegmentedControl(_ sender: UISegmentedControl) {
+    @IBAction func selectSegmentedControlAction(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
             postcardImageView.image = imageArray[sender.selectedSegmentIndex]
