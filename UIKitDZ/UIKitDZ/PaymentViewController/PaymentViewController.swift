@@ -34,7 +34,7 @@ final class PaymentViewController: UIViewController {
         cardSwitch.isOn = true
     }
     
-    // MARK: - Actions
+    // MARK: - Private Actions
     
     @objc private func switchAction(_ sender: UISwitch) {
         if cardSwitch === sender {
@@ -113,7 +113,7 @@ private extension PaymentViewController {
     
     func makeSwitch(yCoordinate: Int) -> UISwitch {
         let mySwitch = UISwitch()
-        mySwitch.onTintColor = UIColor(displayP3Red: 227/252, green: 30/252, blue: 35/252, alpha: 1)
+        mySwitch.onTintColor = UIColor(displayP3Red: 227 / 252, green: 30 / 252, blue: 35 / 252, alpha: 1)
         mySwitch.frame = CGRect(x: 305, y: yCoordinate, width: 52, height: 32)
         mySwitch.addTarget(self, action: #selector(switchAction(_:)), for: .valueChanged)
         return mySwitch

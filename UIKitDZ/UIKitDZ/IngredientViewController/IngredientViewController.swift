@@ -43,7 +43,7 @@ final class IngredientViewController: UIViewController {
         setupUI()
     }
     
-    // MARK: - Actions
+    // MARK: - Private Actions
     
     @objc private func selectButtonAction() {
         let paymentViewController = PaymentViewController()
@@ -84,17 +84,14 @@ final class IngredientViewController: UIViewController {
     // Как можно улучшить эту часть?
     private func updateModel() -> [String] {
         var ingredient: [String] = [String]()
-        if cheeseSwitch.isOn {
-            ingredient.append(cheeseLabel.text ?? "")
-        }
-        if hamSwitch.isOn {
-            ingredient.append(hamLabel.text ?? "")
-        }
-        if mushroomsSwitch.isOn {
-            ingredient.append(mushroomsLabel.text ?? "")
-        }
-        if olivesSwitch.isOn {
-            ingredient.append(olivesLabel.text ?? "")
+        
+        let switchesMap: [UISwitch: UILabel] = [cheeseSwitch: cheeseLabel,
+                                                hamSwitch: hamLabel,
+                                          mushroomsSwitch: mushroomsLabel,
+                                             olivesSwitch: olivesLabel]
+        
+        for (key, value) in switchesMap where key.isOn {
+            ingredient.append(value.text ?? "")
         }
         return ingredient
     }
@@ -179,7 +176,7 @@ private extension IngredientViewController {
     
     func makeSwitch(yCoordinate: Int) -> UISwitch {
         let mySwitch = UISwitch()
-        mySwitch.onTintColor = UIColor(displayP3Red: 227/252, green: 30/252, blue: 35/252, alpha: 1)
+        mySwitch.onTintColor = UIColor(displayP3Red: 227 / 252, green: 30 / 252, blue: 35 / 252, alpha: 1)
         mySwitch.frame = CGRect(x: 332, y: yCoordinate, width: 52, height: 32)
         return mySwitch
     }
@@ -187,7 +184,7 @@ private extension IngredientViewController {
     func makeInfoButton() -> UIButton {
         let button = UIButton()
         button.setImage(UIImage(systemName: "info.circle"), for: .normal)
-        button.tintColor = UIColor(displayP3Red: 227/252, green: 30/252, blue: 35/252, alpha: 1)
+        button.tintColor = UIColor(displayP3Red: 227 / 252, green: 30 / 252, blue: 35 / 252, alpha: 1)
         button.frame = CGRect(x: 344, y: 55, width: 40, height: 40)
         button.addTarget(self, action: #selector(infoButtonAction), for: .touchUpInside)
         return button

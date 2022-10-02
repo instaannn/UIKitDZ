@@ -30,6 +30,8 @@ final class PizzasViewController: UIViewController {
         view.backgroundColor = .white
     }
     
+    // MARK: - Private Actions
+    
     @objc private func goToIngredientViewController(_ sender: UIButton) {
         switch sender.tag {
         case 0...1:
@@ -93,7 +95,7 @@ private extension PizzasViewController {
         let button = UIButton()
         button.setImage(UIImage(systemName: "plus"), for: .normal)
         button.tintColor = .white
-        button.backgroundColor = UIColor(displayP3Red: 227/252, green: 30/252, blue: 35/252, alpha: 1)
+        button.backgroundColor = UIColor(displayP3Red: 227 / 252, green: 30 / 252, blue: 35 / 252, alpha: 1)
         button.frame = CGRect(x: 354, y: yCoordinate, width: 40, height: 40)
         button.layer.cornerRadius = 5
         button.addTarget(self, action: #selector(goToIngredientViewController(_:)), for: .touchUpInside)

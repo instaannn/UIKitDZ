@@ -32,7 +32,7 @@ final class SignInViewController: UIViewController {
         setupUI()
     }
     
-    // MARK: - Actions
+    // MARK: - Private Actions
     
     @objc private func signInButtonAction() {
         let catalogViewController = CatalogViewController()

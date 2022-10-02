@@ -27,7 +27,7 @@ final class CatalogViewController: UIViewController {
         view.backgroundColor = .white
     }
     
-    // MARK: - Actions
+    // MARK: - Private Actions
     
     @objc private func openPizzaButtonAction() {
         let pizzasViewController = PizzasViewController()
