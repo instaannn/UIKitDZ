@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8509DA0728E9FEA3006FBF94 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509DA0628E9FEA3006FBF94 /* TimerViewController.swift */; };
 		85B4C3C828DB404F00C16B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B4C3C728DB404F00C16B52 /* AppDelegate.swift */; };
 		85B4C3CA28DB404F00C16B52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B4C3C928DB404F00C16B52 /* SceneDelegate.swift */; };
 		85B4C3CC28DB404F00C16B52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B4C3CB28DB404F00C16B52 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8509DA0628E9FEA3006FBF94 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		85B4C3C428DB404F00C16B52 /* UIKitDZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitDZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85B4C3C728DB404F00C16B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85B4C3C928DB404F00C16B52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				85B4C3C728DB404F00C16B52 /* AppDelegate.swift */,
 				85B4C3C928DB404F00C16B52 /* SceneDelegate.swift */,
 				85B4C3CB28DB404F00C16B52 /* ViewController.swift */,
+				8509DA0628E9FEA3006FBF94 /* TimerViewController.swift */,
 				85B4C3CD28DB404F00C16B52 /* Main.storyboard */,
 				85B4C3D028DB405100C16B52 /* Assets.xcassets */,
 				85B4C3D228DB405100C16B52 /* LaunchScreen.storyboard */,
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8509DA0728E9FEA3006FBF94 /* TimerViewController.swift in Sources */,
 				85B4C3CC28DB404F00C16B52 /* ViewController.swift in Sources */,
 				85B4C3C828DB404F00C16B52 /* AppDelegate.swift in Sources */,
 				85B4C3CA28DB404F00C16B52 /* SceneDelegate.swift in Sources */,
