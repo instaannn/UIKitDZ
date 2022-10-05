@@ -9,7 +9,7 @@ import UIKit
 /// Экран отображения картинки
 final class CatViewController: UIViewController {
     
-    // MARK: - IBOutlet
+    // MARK: - private IBOutlet
     
     @IBOutlet private var catImageView: UIImageView!
     @IBOutlet private var colorSegmentControl: UISegmentedControl!
@@ -21,7 +21,7 @@ final class CatViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    // MARK: - IBAction
+    // MARK: - private IBAction
     
     @IBAction private func colorSegmentAction(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {

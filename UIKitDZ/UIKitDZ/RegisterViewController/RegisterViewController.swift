@@ -20,7 +20,7 @@ final class RegisterViewController: UIViewController {
         static let alertMassageLoginBusy = "This login is busy"
     }
     
-    // MARK: - IBOutlet
+    // MARK: - Private IBOutlet
     
     @IBOutlet private var loginTextField: UITextField!
     @IBOutlet private var passwordTextField: UITextField!
@@ -33,7 +33,7 @@ final class RegisterViewController: UIViewController {
         setupUI()
     }
     
-    // MARK: - Private actions
+    // MARK: - Private IBAction
     
     @IBAction private func registerButtonAction(_ sender: UIButton) {
         guard let login = loginTextField.text,
@@ -51,7 +51,9 @@ final class RegisterViewController: UIViewController {
         }
     }
     
-    @objc private func viewTapped() {
+    // MARK: - Private actions
+    
+    @objc private func viewTappedAction() {
         view.endEditing(true)
     }
 }
@@ -94,7 +96,7 @@ private extension RegisterViewController {
     }
     
     func setTapView() {
-        let theTap = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
+        let theTap = UITapGestureRecognizer(target: self, action: #selector(viewTappedAction))
         view.addGestureRecognizer(theTap)
     }
     

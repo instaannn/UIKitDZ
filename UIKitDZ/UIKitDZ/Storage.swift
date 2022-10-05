@@ -15,15 +15,15 @@ final class SaveLoginPass {
     
     static var shared = SaveLoginPass()
     
-    public lazy var defaults = UserDefaults.standard
+    lazy var defaults = UserDefaults.standard
     
     // MARK: - Public methods
     
-    public func saveLoginPass(text: String, forKey: String) {
+    func saveLoginPass(text: String, forKey: String) {
         defaults.set(text, forKey: forKey)
     }
     
-    public func checkLoginPass(forKey: String) -> String {
+    func checkLoginPass(forKey: String) -> String {
         let name = defaults.value(forKey: forKey) as? String ?? ""
         return name
     }
