@@ -19,11 +19,7 @@ final class SettingsViewController: UIViewController {
         static let segmentControlBold = "Bold"
     }
     
-    // MARK: - Public properties
-    
-    weak var delegate: ReaderViewControllerDelegate?
-    
-    // MARK: - Private properties
+    // MARK: - Visual Components
     
     private lazy var fontLabel = makeFontLabel()
     private lazy var fontPicker = makeFontPicker()
@@ -32,10 +28,17 @@ final class SettingsViewController: UIViewController {
     private lazy var largeA = makeAImageView(name: Constants.largeASystemName, xCoordinate: 374)
     private lazy var boldSegmentControl = makeBoldSegmentControl()
     private lazy var darkModeSwitch = makeDarkModeSwitch()
-    private lazy var colors: [UIColor] = [.systemPink, .systemBlue, .systemBrown, .systemOrange]
-    private lazy var fonts: [String] = [String]()
-    private lazy var selectFont = ""
-    private lazy var selectSize: CGFloat = 0
+    
+    // MARK: - Public properties
+    
+    weak var delegate: ReaderViewControllerDelegate?
+    
+    // MARK: - Private properties
+    
+    private var colors: [UIColor] = [.systemPink, .systemBlue, .systemBrown, .systemOrange]
+    private var fonts: [String] = [String]()
+    private var selectFont = ""
+    private var selectSize: CGFloat = 0
 
     // MARK: - Lifecycle
     
