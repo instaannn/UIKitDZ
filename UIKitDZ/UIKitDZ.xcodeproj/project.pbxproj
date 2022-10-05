@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8509DA3928ECB176006FBF94 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509DA3828ECB176006FBF94 /* SettingsViewController.swift */; };
+		8509DA3D28ECC7B0006FBF94 /* Poem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509DA3C28ECC7B0006FBF94 /* Poem.swift */; };
+		8509DA3F28ECFCD4006FBF94 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509DA3E28ECFCD4006FBF94 /* UIFont+Extension.swift */; };
 		85B4C3C828DB404F00C16B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B4C3C728DB404F00C16B52 /* AppDelegate.swift */; };
 		85B4C3CA28DB404F00C16B52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B4C3C928DB404F00C16B52 /* SceneDelegate.swift */; };
-		85B4C3CC28DB404F00C16B52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B4C3CB28DB404F00C16B52 /* ViewController.swift */; };
+		85B4C3CC28DB404F00C16B52 /* ReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B4C3CB28DB404F00C16B52 /* ReaderViewController.swift */; };
 		85B4C3CF28DB404F00C16B52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85B4C3CD28DB404F00C16B52 /* Main.storyboard */; };
 		85B4C3D128DB405100C16B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85B4C3D028DB405100C16B52 /* Assets.xcassets */; };
 		85B4C3D428DB405100C16B52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85B4C3D228DB405100C16B52 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8509DA3828ECB176006FBF94 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8509DA3C28ECC7B0006FBF94 /* Poem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poem.swift; sourceTree = "<group>"; };
+		8509DA3E28ECFCD4006FBF94 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		85B4C3C428DB404F00C16B52 /* UIKitDZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitDZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85B4C3C728DB404F00C16B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85B4C3C928DB404F00C16B52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		85B4C3CB28DB404F00C16B52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85B4C3CB28DB404F00C16B52 /* ReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderViewController.swift; sourceTree = "<group>"; };
 		85B4C3CE28DB404F00C16B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85B4C3D028DB405100C16B52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85B4C3D328DB405100C16B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +44,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8509DA4028ED0225006FBF94 /* ReaderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8509DA4228ED023E006FBF94 /* Model */,
+				8509DA4128ED022B006FBF94 /* ViewController */,
+			);
+			path = ReaderViewController;
+			sourceTree = "<group>";
+		};
+		8509DA4128ED022B006FBF94 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				85B4C3CB28DB404F00C16B52 /* ReaderViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8509DA4228ED023E006FBF94 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8509DA3C28ECC7B0006FBF94 /* Poem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8509DA4328ED0255006FBF94 /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8509DA3828ECB176006FBF94 /* SettingsViewController.swift */,
+			);
+			path = SettingsViewController;
+			sourceTree = "<group>";
+		};
+		8509DA4428ED0262006FBF94 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8509DA3E28ECFCD4006FBF94 /* UIFont+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		85B4C3BB28DB404F00C16B52 = {
 			isa = PBXGroup;
 			children = (
@@ -59,7 +106,9 @@
 			children = (
 				85B4C3C728DB404F00C16B52 /* AppDelegate.swift */,
 				85B4C3C928DB404F00C16B52 /* SceneDelegate.swift */,
-				85B4C3CB28DB404F00C16B52 /* ViewController.swift */,
+				8509DA4028ED0225006FBF94 /* ReaderViewController */,
+				8509DA4328ED0255006FBF94 /* SettingsViewController */,
+				8509DA4428ED0262006FBF94 /* Extensions */,
 				85B4C3CD28DB404F00C16B52 /* Main.storyboard */,
 				85B4C3D028DB405100C16B52 /* Assets.xcassets */,
 				85B4C3D228DB405100C16B52 /* LaunchScreen.storyboard */,
@@ -162,9 +211,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85B4C3CC28DB404F00C16B52 /* ViewController.swift in Sources */,
+				8509DA3F28ECFCD4006FBF94 /* UIFont+Extension.swift in Sources */,
+				85B4C3CC28DB404F00C16B52 /* ReaderViewController.swift in Sources */,
 				85B4C3C828DB404F00C16B52 /* AppDelegate.swift in Sources */,
 				85B4C3CA28DB404F00C16B52 /* SceneDelegate.swift in Sources */,
+				8509DA3D28ECC7B0006FBF94 /* Poem.swift in Sources */,
+				8509DA3928ECB176006FBF94 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
