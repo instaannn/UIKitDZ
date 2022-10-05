@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8509DA2928EB3428006FBF94 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509DA2828EB3428006FBF94 /* UITextField+Extension.swift */; };
+		8509DA2B28EB3593006FBF94 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509DA2A28EB3593006FBF94 /* RegisterViewController.swift */; };
+		8509DA2D28EB369E006FBF94 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509DA2C28EB369E006FBF94 /* UIViewController+Extension.swift */; };
+		8509DA2F28EB385E006FBF94 /* CatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509DA2E28EB385E006FBF94 /* CatViewController.swift */; };
+		8509DA3128EB3C3D006FBF94 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509DA3028EB3C3D006FBF94 /* Storage.swift */; };
+		8509DA3428EB6736006FBF94 /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509DA3328EB6736006FBF94 /* UIStoryboard+Extension.swift */; };
 		85B4C3C828DB404F00C16B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B4C3C728DB404F00C16B52 /* AppDelegate.swift */; };
 		85B4C3CA28DB404F00C16B52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B4C3C928DB404F00C16B52 /* SceneDelegate.swift */; };
-		85B4C3CC28DB404F00C16B52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B4C3CB28DB404F00C16B52 /* ViewController.swift */; };
+		85B4C3CC28DB404F00C16B52 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B4C3CB28DB404F00C16B52 /* SignInViewController.swift */; };
 		85B4C3CF28DB404F00C16B52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85B4C3CD28DB404F00C16B52 /* Main.storyboard */; };
 		85B4C3D128DB405100C16B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85B4C3D028DB405100C16B52 /* Assets.xcassets */; };
 		85B4C3D428DB405100C16B52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85B4C3D228DB405100C16B52 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8509DA2828EB3428006FBF94 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		8509DA2A28EB3593006FBF94 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8509DA2C28EB369E006FBF94 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		8509DA2E28EB385E006FBF94 /* CatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewController.swift; sourceTree = "<group>"; };
+		8509DA3028EB3C3D006FBF94 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		8509DA3328EB6736006FBF94 /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
 		85B4C3C428DB404F00C16B52 /* UIKitDZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitDZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85B4C3C728DB404F00C16B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85B4C3C928DB404F00C16B52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		85B4C3CB28DB404F00C16B52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85B4C3CB28DB404F00C16B52 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		85B4C3CE28DB404F00C16B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85B4C3D028DB405100C16B52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85B4C3D328DB405100C16B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +50,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8509DA3228EB6526006FBF94 /* SignInViewController */ = {
+			isa = PBXGroup;
+			children = (
+				85B4C3CB28DB404F00C16B52 /* SignInViewController.swift */,
+			);
+			path = SignInViewController;
+			sourceTree = "<group>";
+		};
+		8509DA3528EB67C9006FBF94 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8509DA3328EB6736006FBF94 /* UIStoryboard+Extension.swift */,
+				8509DA2828EB3428006FBF94 /* UITextField+Extension.swift */,
+				8509DA2C28EB369E006FBF94 /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8509DA3628EB67EA006FBF94 /* RegisterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8509DA2A28EB3593006FBF94 /* RegisterViewController.swift */,
+			);
+			path = RegisterViewController;
+			sourceTree = "<group>";
+		};
+		8509DA3728EB67FA006FBF94 /* CatViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8509DA2E28EB385E006FBF94 /* CatViewController.swift */,
+			);
+			path = CatViewController;
+			sourceTree = "<group>";
+		};
 		85B4C3BB28DB404F00C16B52 = {
 			isa = PBXGroup;
 			children = (
@@ -59,7 +105,11 @@
 			children = (
 				85B4C3C728DB404F00C16B52 /* AppDelegate.swift */,
 				85B4C3C928DB404F00C16B52 /* SceneDelegate.swift */,
-				85B4C3CB28DB404F00C16B52 /* ViewController.swift */,
+				8509DA3228EB6526006FBF94 /* SignInViewController */,
+				8509DA3628EB67EA006FBF94 /* RegisterViewController */,
+				8509DA3728EB67FA006FBF94 /* CatViewController */,
+				8509DA3528EB67C9006FBF94 /* Extensions */,
+				8509DA3028EB3C3D006FBF94 /* Storage.swift */,
 				85B4C3CD28DB404F00C16B52 /* Main.storyboard */,
 				85B4C3D028DB405100C16B52 /* Assets.xcassets */,
 				85B4C3D228DB405100C16B52 /* LaunchScreen.storyboard */,
@@ -162,9 +212,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85B4C3CC28DB404F00C16B52 /* ViewController.swift in Sources */,
+				8509DA2F28EB385E006FBF94 /* CatViewController.swift in Sources */,
+				8509DA2D28EB369E006FBF94 /* UIViewController+Extension.swift in Sources */,
+				85B4C3CC28DB404F00C16B52 /* SignInViewController.swift in Sources */,
+				8509DA2B28EB3593006FBF94 /* RegisterViewController.swift in Sources */,
 				85B4C3C828DB404F00C16B52 /* AppDelegate.swift in Sources */,
+				8509DA3128EB3C3D006FBF94 /* Storage.swift in Sources */,
+				8509DA2928EB3428006FBF94 /* UITextField+Extension.swift in Sources */,
 				85B4C3CA28DB404F00C16B52 /* SceneDelegate.swift in Sources */,
+				8509DA3428EB6736006FBF94 /* UIStoryboard+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
