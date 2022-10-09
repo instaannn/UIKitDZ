@@ -6,6 +6,7 @@
 //
 
 import UIKit
+
 /// Пустой экран для тейблвью
 final class FineViewController: UIViewController {
     

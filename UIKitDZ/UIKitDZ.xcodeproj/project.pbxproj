@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8509DA6C28F0B0DB006FBF94 /* FineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509DA6B28F0B0DB006FBF94 /* FineViewController.swift */; };
 		8509DA6E28F0BB11006FBF94 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509DA6D28F0BB11006FBF94 /* UIViewController+Extension.swift */; };
+		8509DACF28F32C94006FBF94 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509DACE28F32C94006FBF94 /* MainTabBarController.swift */; };
 		85B4C3C828DB404F00C16B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B4C3C728DB404F00C16B52 /* AppDelegate.swift */; };
 		85B4C3CA28DB404F00C16B52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B4C3C928DB404F00C16B52 /* SceneDelegate.swift */; };
 		85B4C3CC28DB404F00C16B52 /* ChangeLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B4C3CB28DB404F00C16B52 /* ChangeLabelViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		8509DA6B28F0B0DB006FBF94 /* FineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FineViewController.swift; sourceTree = "<group>"; };
 		8509DA6D28F0BB11006FBF94 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		8509DACE28F32C94006FBF94 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		85B4C3C428DB404F00C16B52 /* UIKitDZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitDZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85B4C3C728DB404F00C16B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85B4C3C928DB404F00C16B52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		8509DACD28F32C85006FBF94 /* CoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				8509DACE28F32C94006FBF94 /* MainTabBarController.swift */,
+			);
+			path = CoreKit;
+			sourceTree = "<group>";
+		};
 		85B4C3BB28DB404F00C16B52 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +100,7 @@
 				8509DA6F28F0C18A006FBF94 /* ChangeLabelViewController */,
 				8509DA7028F0C1BA006FBF94 /* FineViewController */,
 				8509DA7128F0C1C5006FBF94 /* Extensions */,
+				8509DACD28F32C85006FBF94 /* CoreKit */,
 				85B4C3CD28DB404F00C16B52 /* Main.storyboard */,
 				85B4C3D028DB405100C16B52 /* Assets.xcassets */,
 				85B4C3D228DB405100C16B52 /* LaunchScreen.storyboard */,
@@ -194,6 +205,7 @@
 			files = (
 				8509DA6C28F0B0DB006FBF94 /* FineViewController.swift in Sources */,
 				85B4C3CC28DB404F00C16B52 /* ChangeLabelViewController.swift in Sources */,
+				8509DACF28F32C94006FBF94 /* MainTabBarController.swift in Sources */,
 				85B4C3C828DB404F00C16B52 /* AppDelegate.swift in Sources */,
 				8509DA6E28F0BB11006FBF94 /* UIViewController+Extension.swift in Sources */,
 				85B4C3CA28DB404F00C16B52 /* SceneDelegate.swift in Sources */,

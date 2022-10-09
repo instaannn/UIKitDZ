@@ -6,25 +6,26 @@
 //
 
 import UIKit
+
 /// Экран обработки текста в лейбле
 final class ChangeLabelViewController: UIViewController {
     
     // MARK: - Constants
     
     private enum Constants {
-        static let nameColorLabel = "Выберите цвет"
-        static let nameNumberOfLineLabel = "Кол-во линий"
+        static let nameColorLabelText = "Выберите цвет"
+        static let nameNumberOfLineLabelText = "Кол-во линий"
         static let alertTitle = "Вот"
         static let alertMessage = "Здесь текст"
-        static let textLabel = "Здесь будет текст"
+        static let textLabelText = "Здесь будет текст"
     }
 
     // MARK: - Visual Components
     
     private lazy var textLabel = makeTextLabel()
     private lazy var sizeSlider = makeSizeSlider()
-    private lazy var nameColorLabel = makeLabel(text: Constants.nameColorLabel, yCoordinate: 595)
-    private lazy var nameNumberOfLineLabel = makeLabel(text: Constants.nameNumberOfLineLabel, yCoordinate: 645)
+    private lazy var nameColorLabel = makeLabel(text: Constants.nameColorLabelText, yCoordinate: 595)
+    private lazy var nameNumberOfLineLabel = makeLabel(text: Constants.nameNumberOfLineLabelText, yCoordinate: 645)
     private lazy var colorPickerView = makePickerView(yCoordinate: 595)
     private lazy var linePickerView = makePickerView(yCoordinate: 645)
     
@@ -54,6 +55,7 @@ final class ChangeLabelViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         setupUI()
     }
     
@@ -172,7 +174,7 @@ private extension ChangeLabelViewController {
     func makeTextLabel() -> UILabel {
         let label = UILabel()
         label.textAlignment = .center
-        label.text = Constants.textLabel
+        label.text = Constants.textLabelText
         label.font = UIFont.boldSystemFont(ofSize: 15)
         label.layer.borderColor = CGColor(srgbRed: 213/255.0, green: 218/255.0, blue: 221/255.0, alpha: 1)
         label.layer.cornerRadius = 15
