@@ -6,8 +6,19 @@
 //
 
 import UIKit
+
 /// Экран таймера
 final class TimerViewController: UIViewController {
+    
+    // MARK: - Constants
+    
+    private enum Constants {
+        static let startTimeKey = "startTime"
+        static let stopTimeKey = "stopTime"
+        static let countingKey = "countingKey"
+        static let startButtonTitle = "Start"
+        static let stopButtonTitle = "Stop"
+    }
     
     // MARK: - IBOutlet
     
@@ -22,9 +33,6 @@ final class TimerViewController: UIViewController {
     private var stopTime: Date?
     private var scheduledTimer: Timer?
     private let userDefaults = UserDefaults.standard
-    private let startTimeKey = "startTime"
-    private let stopTimeKey = "stopTime"
-    private let countingKey = "countingKey"
     
     // MARK: - Lifecycle
 
@@ -73,29 +81,29 @@ final class TimerViewController: UIViewController {
     
     private func setStartTime(date: Date?) {
         startTime = date
-        userDefaults.set(startTime, forKey: startTimeKey)
+        userDefaults.set(startTime, forKey: Constants.startTimeKey)
     }
     
     private func setStopTime(date: Date?) {
         stopTime = date
-        userDefaults.set(stopTime, forKey: stopTimeKey)
+        userDefaults.set(stopTime, forKey: Constants.stopTimeKey)
     }
     
     private func setTimeCounting(value: Bool) {
         timerCounting = value
-        userDefaults.set(timerCounting, forKey: countingKey)
+        userDefaults.set(timerCounting, forKey: Constants.countingKey)
     }
     
     private func getUserDefaultsValue() {
-        startTime = userDefaults.object(forKey: startTimeKey) as? Date
-        stopTime = userDefaults.object(forKey: stopTimeKey) as? Date
-        timerCounting = userDefaults.bool(forKey: countingKey)
+        startTime = userDefaults.object(forKey: Constants.startTimeKey) as? Date
+        stopTime = userDefaults.object(forKey: Constants.stopTimeKey) as? Date
+        timerCounting = userDefaults.bool(forKey: Constants.countingKey)
     }
     
     private func stopTimer() {
         scheduledTimer?.invalidate()
         setTimeCounting(value: false)
-        startStopButton.setTitle("Start", for: .normal)
+        startStopButton.setTitle(Constants.startButtonTitle, for: .normal)
         startStopButton.setTitleColor(.systemGreen, for: .normal)
     }
     
@@ -108,7 +116,7 @@ final class TimerViewController: UIViewController {
             repeats: true
         )
         setTimeCounting(value: true)
-        startStopButton.setTitle("Stop", for: .normal)
+        startStopButton.setTitle(Constants.stopButtonTitle, for: .normal)
         startStopButton.setTitleColor(.systemRed, for: .normal)
     }
     
@@ -126,13 +134,7 @@ final class TimerViewController: UIViewController {
     }
     
     private func makeTimeString(hour: Int, min: Int, sec: Int) -> String {
-        var timeString = ""
-        timeString += String(format: "%02d", hour)
-        timeString += ":"
-        timeString += String(format: "%02d", min)
-        timeString += ":"
-        timeString += String(format: "%02d", sec)
-        return timeString
+        "\(String(format: "%02d", hour)):\(String(format: "%02d", min)):\(String(format: "%02d", sec))"
     }
     
     private func calculateRestartTime(start: Date, stop: Date) -> Date {
