@@ -6,12 +6,13 @@
 //
 
 import UIKit
+
 /// Экран таймера
 final class TimerViewController: UIViewController {
     
     // MARK: - IBOutlet
     
-    @IBOutlet weak var timerPickerView: UIPickerView!
+    @IBOutlet private var timerPickerView: UIPickerView!
     
     // MARK: - Private properties
     
