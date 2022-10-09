@@ -22,9 +22,9 @@ final class TimerViewController: UIViewController {
     
     // MARK: - IBOutlet
     
-    @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var startStopButton: UIButton!
-    @IBOutlet weak var resetButton: UIButton!
+    @IBOutlet private weak var timeLabel: UILabel!
+    @IBOutlet private weak var startStopButton: UIButton!
+    @IBOutlet private weak var resetButton: UIButton!
     
     // MARK: - Private properties
     
@@ -39,22 +39,12 @@ final class TimerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getUserDefaultsValue()
-        
-        if timerCounting {
-            startTimer()
-        } else {
-            stopTimer()
-            guard let start = startTime,
-                  let stop = stopTime else { return }
-            let time = calculateRestartTime(start: start, stop: stop)
-            let diff = Date().timeIntervalSince(time)
-            setTimeLabel(Int(diff))
-        }
+        startCountingTimer()
     }
     
     // MARK: - IBAction
     
-    @IBAction func startStopButtonAction(_ sender: UIButton) {
+    @IBAction private func startStopButtonAction(_ sender: UIButton) {
         if timerCounting {
             setStopTime(date: Date())
             stopTimer()
@@ -70,7 +60,7 @@ final class TimerViewController: UIViewController {
         }
     }
     
-    @IBAction func resetButtonAction(_ sender: UIButton) {
+    @IBAction private func resetButtonAction(_ sender: UIButton) {
         setStopTime(date: nil)
         setStartTime(date: nil)
         timeLabel.text = makeTimeString(hour: 0, min: 0, sec: 0)
@@ -100,6 +90,19 @@ final class TimerViewController: UIViewController {
         timerCounting = userDefaults.bool(forKey: Constants.countingKey)
     }
     
+    private func startCountingTimer() {
+        if timerCounting {
+            startTimer()
+        } else {
+            stopTimer()
+            guard let start = startTime,
+                  let stop = stopTime else { return }
+            let time = calculateRestartTime(start: start, stop: stop)
+            let diff = Date().timeIntervalSince(time)
+            setTimeLabel(Int(diff))
+        }
+    }
+    
     private func stopTimer() {
         scheduledTimer?.invalidate()
         setTimeCounting(value: false)
@@ -111,7 +114,7 @@ final class TimerViewController: UIViewController {
         scheduledTimer = Timer.scheduledTimer(
             timeInterval: 0.1,
             target: self,
-            selector: #selector(refreshValue),
+            selector: #selector(refreshValueAction),
             userInfo: nil,
             repeats: true
         )
@@ -142,7 +145,7 @@ final class TimerViewController: UIViewController {
         return Date().addingTimeInterval(diff)
     }
     
-    @objc private func refreshValue() {
+    @objc private func refreshValueAction() {
         guard let start = startTime else {
             stopTimer()
             setTimeLabel(0)
